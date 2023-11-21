@@ -1,0 +1,96 @@
+.content {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-style: oblique;
+}
+.p {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-style: oblique;
+}
+.about {
+  color: white;
+  flex: 2;
+}
+
+.about:hover {
+  background-color: #77a5b8;
+}
+.image img {
+  max-width: 100%;
+  height: 50vh;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin-right: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-me {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+  font-style: oblique;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.about p {
+  margin-bottom: 15px;
+}
+section {
+  font-style: italic;
+  color:white;
+}
+.lock {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  margin: 20px;
+}
+@media (max-width: 767px) {
+  
+  .lock {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  .image {
+    margin-right: 0; /* Remove margin for better stacking */
+    margin-bottom: 20px; /* Add space between image and text */
+  }
+}
