@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import svgIcon from "../icon/Icon1.svg";
-import svgIcon3 from "../icon/Icon3.svg";
+import svgIcon from "../icon/Icon9.svg";
 import "../css/Navbar.css";
 import { Link, useLocation } from "react-router-dom";
 
@@ -28,13 +27,13 @@ function Navbar() {
       <div className="navbar">
         <div className="desktop-nav">
           <ul>
-            {show === "/" ? (
+            {show === "/home" ? (
               " "
             ) : (
               <li className="desktop">
                 <Link to="/home">
-                  {" "}
-                  <img src={svgIcon3} alt="gg3" />
+                
+                  Home
                 </Link>
               </li>
             )}
@@ -70,7 +69,7 @@ function Navbar() {
         </div>
 
         <div className="hamburger">
-          <img src={svgIcon} onClick={() => hamburger(true)} alt="gg" />
+          <img src={svgIcon} onClick={() => hamburger(true)} alt="gg" className="clot" />
         </div>
 
         {mobileNavBar ? (

@@ -1,14 +1,16 @@
 
 import React from 'react';
+import Comp from "../images/images10.jpg";
+import "../css/Resume.css";
 
-const Resume = () => {
+function Resume ()  {
   return (
     <div>
-      <p>Download my resume:</p>
-      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-        Resume
-      </a>
-    </div>
+      <h5>My Resume</h5>
+    
+      <img src={Comp} alt="gg10" className='resume1' />
+     
+      </div>
   );
 };
 

@@ -3,11 +3,8 @@ import image from "../images/pic1.jpg";
 function About_us() {
   return (
     <div className="container">
-      <header>
-        <h1>Akanksha</h1>
-        <p className="content">Web Developer</p>
-      </header>
-      <h2>About Me</h2>
+     
+      <h2 className="ed">About Me</h2>
       <div className="lock">
       <div className="image">
         <img src={image} alt="My Profile Picture" />
@@ -29,7 +26,7 @@ function About_us() {
         </section>
 </div>
         <footer>
-          <p>&copy; 2023 abcd. All rights reserved.</p>
+          <p className="text">&copy; 2023 akanksha. All rights reserved.</p>
         </footer>
       </div>
     </div>

@@ -1,16 +1,19 @@
 
 import React, { useRef,useState } from "react";
 import emailjs from "@emailjs/browser";
-import svgIcon8 from "../icon/Icon8.svg";
+
 import '../css/Contact.css';
 import '../css/Loader.css';
+import Loader from './Loader';
 function Contact() {
   const form = useRef();
-  const [loading, setLoading] = useState(false);
+  const [Loaders, setLoader] = useState(false);
+  
 
-  const sendEmail = async(e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    setLoading(true);
+    setLoader(true);
+  
     
     emailjs
       .sendForm(
@@ -22,18 +25,20 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Form submitted")
+          setLoader(false)
+          alert("Form submitted");
         },
         (error) => {
           console.log(error.text);
-        }
-      )
-      .finally(() => {
-        setLoading(false);
-      });
+        });
+      
+     
   };
 
   return (
+    <div className="content">
+      <h1 className="h2">Contact Me</h1>
+    
     <form ref={form} onSubmit={sendEmail}>
       <label> Name:</label>
       <input type="text" name="name" required />
@@ -53,14 +58,16 @@ function Contact() {
       <input type="number" name="Phone_no"/>
 
       <br />
-      <input type="submit" value="Send" />
-      <input type="reset" value="reset" />
-
-      {loading && <div className="loader"> 
-           <img src={svgIcon8} alt="gg8" />
-        
-        </div>}
+      {!Loaders?
+      <button type="submit"  className="btn">submit</button>
+     
+      :
+      <Loader/>
+      
+}
+<button type="reset" className="btn">reset</button>
     </form>
+    </div>
   );
 }
 

@@ -18,6 +18,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/skills' element={<Skills/>}/>
         <Route path='/resume' element={<Resume/>}/>
+        
       </Routes>
       </BrowserRouter>
       

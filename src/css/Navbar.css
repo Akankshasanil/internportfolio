@@ -2,16 +2,13 @@ body {
     margin: 0;
     background-color: gray;
     font-family: Arial, sans-serif;
-
-}
-h1{
-  color: white;
-  text-align: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,9,121,1) 79%, rgb(46, 57, 59) 100%);
 }
 
 nav {
-    background-color:orange;
-    padding: 10px 20px;
+    
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,9,121,1) 79%,  rgb(46, 57, 59) 100%);
+    padding: 30px 20px;
     
 
 }
@@ -39,7 +36,7 @@ nav {
 
 .desktop-nav a,
 .mobile-nav a {
- color: black;
+ color: white;
     text-decoration: none;
     font-size: 16px;
    text-align: center;
@@ -59,6 +56,7 @@ nav {
     }
     .hamburger {
         display: block;
+        color: #fff;
     }
     .mobile-nav {
         display: flex;
@@ -70,7 +68,7 @@ nav {
         color: white;
         width: 45%;
        overflow: hidden;
-        
+        border-radius: 5px;
       }
     .mobile-nav.show ul {
         max-height: 150px;
@@ -81,7 +79,7 @@ nav {
         padding: 6px;
         text-align: center;
         border-bottom: 1px solid white;
-        width: 100%;
+    
         display: block;
         color:white;
         text-decoration: none;
@@ -103,16 +101,33 @@ nav {
       .mobile-nav li {
         padding: 10px;
       }
+       a:hover {
+        padding: 4px;
+        width: 100%;
+        background-color:lightblue;
+        color: black;
+    }
+   
+    img.clot {
+        width: 20px; /* Adjust the width as needed */
+        height: auto;
+        cursor: pointer;
+        
+        margin-right: 5px;
+        float: left;
+      }
 }
 
 .desktop-nav ul a:hover {
-    background-color:white;
+    background-color:lightblue;
     padding: 10px 20px;
     color: black;
+    border-radius: 5px;
 }
 
 .mobile-nav ul a:hover {
     padding: 4px;
     width: 100%;
-    background-color: lightslategray;
+    background-color:lightblue;
+    color: black;
 }

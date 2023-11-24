@@ -1,9 +1,11 @@
-// import svgIcon8 from "../icon/Icon8.svg";
-// function Loader(){
-//     return(
-//         <div>
-//             <img src={svgIcon8} alt="gg8" />
-        
-//         </div>
-//     )
-// }
+import "../css/Loader.css";
+function Loader (){
+return(
+    <>
+    <svg viewBox="25 25 50 50">
+  <circle r="20" cy="50" cx="50"></circle>
+</svg>
+    </>
+);
+}
+export default Loader;

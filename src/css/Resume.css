@@ -1,0 +1,25 @@
+h5{
+    color: aliceblue;
+    text-align: center;
+    font-size: x-large;
+}
+
+div {
+    text-align: center;
+  }
+  
+ 
+  img.resume1 {
+    max-width: 50%; 
+    height: auto;    
+    margin: 0 auto;   
+    margin-top: 10px; 
+  }
+  @media (max-width: 600px) {
+    img.resume1 {
+        max-width: 90%; 
+        height: auto;    
+        margin: 0 auto;   
+        margin-top: 10px; 
+      }
+    }
