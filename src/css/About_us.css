@@ -51,17 +51,6 @@ li {
   margin-bottom: 5px;
 }
 
-footer {
-  text-align: center;
-  padding: 10px;
-
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,9,121,1) 79%, rgb(46, 57, 59) 100%);
-  
-  color: #fff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
 p.text{
   text-align: center;
 }

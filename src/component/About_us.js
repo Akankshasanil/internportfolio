@@ -25,9 +25,7 @@ function About_us() {
           </p>
         </section>
 </div>
-        <footer>
-          <p className="text">&copy; 2023 akanksha. All rights reserved.</p>
-        </footer>
+       
       </div>
     </div>
   );

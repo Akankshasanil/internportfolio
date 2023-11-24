@@ -1,0 +1,38 @@
+/* footer {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,9,121,1) 79%, rgb(46, 57, 59) 100%);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 0%;
+    /* display: flex;
+    justify-content: space-around; 
+    
+} */
+
+.item {
+    text-align: center;
+    margin-top: 10px;
+  
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+  
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,9,121,1) 79%, rgb(46, 57, 59) 100%);
+    
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+
+/* @media (max-width:600px) {
+    .foot {
+        display: flex;
+        flex-direction: row;
+    }
+} */

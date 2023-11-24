@@ -4,6 +4,7 @@ import Navbar from "./component/Navbar";
 import Contact from "./component/Contact";
 import Skills from "./component/Skills";
 import Resume from './component/Resume';
+import Footer from './component/Footer';
 
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/resume' element={<Resume/>}/>
         
       </Routes>
+      <Footer/>
       </BrowserRouter>
       
     </div>
