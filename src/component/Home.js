@@ -23,7 +23,7 @@ function Home() {
         <Skills/>
       <Contact/>
       <div className="contact">
-                       <h2><img src={svgIcon2} alt="gg2" /> Contact</h2>
+                       
                        <div className="c1">
                          <ul>
                           <li><img src={svgIcon5} alt="gg5" /> : akanksha@gmail.com</li>
